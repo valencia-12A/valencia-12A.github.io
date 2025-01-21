@@ -3,7 +3,84 @@
 <head>
   <meta charset="UTF-8">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <style>
+  .btn:hover {
+    background-color: #343a40;
+    color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+  }
+</style>
   <title>VALENCIA</title>
+  <style>
+  /* Efek berkedip */
+  .blink {
+    animation: blink 1.5s infinite;
+  }
+
+  @keyframes blink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.7;
+    }
+  }
+
+  /* Hover efek zoom */
+  .card-img-top {
+    transition: transform 0.5s, box-shadow 0.5s;
+  }
+
+  .card:hover .card-img-top {
+    transform: scale(1.1);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Fade-in animasi */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s forwards;
+  }
+
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
+  <style>
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s forwards;
+  }
+
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .navbar {
+    animation: slideDown 0.5s ease-out forwards;
+    transform: translateY(-100%);
+  }
+
+  @keyframes slideDown {
+    to {
+      transform: translateY(0);
+    }
+  }
+</style>
 </head>
 <body class="bg-dark">
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-light sticky-top">
@@ -53,85 +130,19 @@
 <div class="container-fluid text-dark mt-4">
   <div class="row justify-content-center">
     <div class="card m-2" style="width: 18rem; max-height: 12rem;">
-      <img src="/accect/foto1.jpg" class="card-img-top" alt="..." style="height: 9rem; object-fit: cover;">
-      <div class="card-body d-flex flex-column justify-content-center align-items-center" style="padding: 0.5rem;">
-        <h6 class="card-title text-center mb-0">Apresiasi Juara</h6>
-      </div>
-    </div>
-    <div class="card m-2" style="width: 18rem; max-height: 12rem;">
-      <img src="/accect/foto2.jpg" class="card-img-top" alt="..." style="height: 9rem; object-fit: cover;">
-      <div class="card-body d-flex flex-column justify-content-center align-items-center" style="padding: 0.5rem;">
-        <h6 class="card-title text-center mb-0">Bakar Bakar</h6>
-      </div>
-    </div>
-    <div class="card m-2" style="width: 18rem; max-height: 12rem;">
-      <img src="/accect/foto3.jpg" class="card-img-top" alt="..." style="height: 9rem; object-fit: cover;">
-      <div class="card-body d-flex flex-column justify-content-center align-items-center" style="padding: 0.5rem;">
-        <h6 class="card-title text-center mbAlternatively-0">Hari Batik</h6>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="container-fluid text-dark mt-4">
-  <div class="row justify-content-center">
-    <div class="card m-2" style="width: 18rem; max-height: 12rem;">
-      <img src="/accect/foto4.jpg" class="card-img-top" alt="..." style="height: 9rem; object-fit: cover;">
-      <div class="card-body d-flex flex-column justify-content-center align-items-center" style="padding: 0.5rem;">
-        <h6 class="card-title text-center mb-0">Ke Gabutan</h6>
-      </div>
-    </div>
-    <div class="card m-2" style="width: 18rem; max-height: 12rem;">
-      <img src="/accect/16bending9.jpg" class="card-img-top" alt="..." style="height: 9rem; object-fit: cover;">
+      <img src="/accect/16bending9.jpg" class="card-img-top fade-in blink" alt="Nama Aktivitas" style="height: 9rem; object-fit: cover;">
       <div class="card-body d-flex flex-column justify-content-center align-items-center" style="padding: 0.5rem;">
         <h6 class="card-title text-center mb-0">Nama Aktivitas</h6>
       </div>
     </div>
     <div class="card m-2" style="width: 18rem; max-height: 12rem;">
-      <img src="/accect/16bending9.jpg" class="card-img-top" alt="..." style="height: 9rem; object-fit: cover;">
-      <div class="card-body d-flex flex-column justify-content-center align-items-center" style="padding: 0.5rem;">
-        <h6 class="card-title text-center mb-0">Nama Aktivitas</h6>
-      </div>
-    </div>
-  </div>
-</div>
-  <div class="container-fluid text-dark mt-4">
-  <div class="row justify-content-center">
-    <div class="card m-2" style="width: 18rem; max-height: 12rem;">
-      <img src="/accect/16bending9.jpg" class="card-img-top" alt="..." style="height: 9rem; object-fit: cover;">
+      <img src="/accect/16bending9.jpg" class="card-img-top fade-in blink" alt="Nama Aktivitas" style="height: 9rem; object-fit: cover;">
       <div class="card-body d-flex flex-column justify-content-center align-items-center" style="padding: 0.5rem;">
         <h6 class="card-title text-center mb-0">Nama Aktivitas</h6>
       </div>
     </div>
     <div class="card m-2" style="width: 18rem; max-height: 12rem;">
-      <img src="/accect/16bending9.jpg" class="card-img-top" alt="..." style="height: 9rem; object-fit: cover;">
-      <div class="card-body d-flex flex-column justify-content-center align-items-center" style="padding: 0.5rem;">
-        <h6 class="card-title text-center mb-0">Nama Aktivitas</h6>
-      </div>
-    </div>
-    <div class="card m-2" style="width: 18rem; max-height: 12rem;">
-      <img src="/accect/16bending9.jpg" class="card-img-top" alt="..." style="height: 9rem; object-fit: cover;">
-      <div class="card-body d-flex flex-column justify-content-center align-items-center" style="padding: 0.5rem;">
-        <h6 class="card-title text-center mb-0">Nama Aktivitas</h6>
-      </div>
-    </div>
-  </div>
-</div>
-  <div class="container-fluid text-dark mt-4">
-  <div class="row justify-content-center">
-    <div class="card m-2" style="width: 18rem; max-height: 12rem;">
-      <img src="/accect/16bending9.jpg" class="card-img-top" alt="..." style="height: 9rem; object-fit: cover;">
-      <div class="card-body d-flex flex-column justify-content-center align-items-center" style="padding: 0.5rem;">
-        <h6 class="card-title text-center mb-0">Nama Aktivitas</h6>
-      </div>
-    </div>
-    <div class="card m-2" style="width: 18rem; max-height: 12rem;">
-      <img src="/accect/16bending9.jpg" class="card-img-top" alt="..." style="height: 9rem; object-fit: cover;">
-      <div class="card-body d-flex flex-column justify-content-center align-items-center" style="padding: 0.5rem;">
-        <h6 class="card-title text-center mb-0">Nama Aktivitas</h6>
-      </div>
-    </div>
-    <div class="card m-2" style="width: 18rem; max-height: 12rem;">
-      <img src="/accect/16bending9.jpg" class="card-img-top" alt="..." style="height: 9rem; object-fit: cover;">
+      <img src="/accect/16bending9.jpg" class="card-img-top fade-in blink" alt="Nama Aktivitas" style="height: 9rem; object-fit: cover;">
       <div class="card-body d-flex flex-column justify-content-center align-items-center" style="padding: 0.5rem;">
         <h6 class="card-title text-center mb-0">Nama Aktivitas</h6>
       </div>
@@ -141,19 +152,83 @@
 <div class="container-fluid text-dark mt-4">
   <div class="row justify-content-center">
     <div class="card m-2" style="width: 18rem; max-height: 12rem;">
-      <img src="/accect/16bending9.jpg" class="card-img-top" alt="..." style="height: 9rem; object-fit: cover;">
+      <img src="/accect/16bending9.jpg" class="card-img-top fade-in blink" alt="Nama Aktivitas" style="height: 9rem; object-fit: cover;">
       <div class="card-body d-flex flex-column justify-content-center align-items-center" style="padding: 0.5rem;">
         <h6 class="card-title text-center mb-0">Nama Aktivitas</h6>
       </div>
     </div>
     <div class="card m-2" style="width: 18rem; max-height: 12rem;">
-      <img src="/accect/16bending9.jpg" class="card-img-top" alt="..." style="height: 9rem; object-fit: cover;">
+      <img src="/accect/16bending9.jpg" class="card-img-top fade-in blink" alt="Nama Aktivitas" style="height: 9rem; object-fit: cover;">
       <div class="card-body d-flex flex-column justify-content-center align-items-center" style="padding: 0.5rem;">
         <h6 class="card-title text-center mb-0">Nama Aktivitas</h6>
       </div>
     </div>
     <div class="card m-2" style="width: 18rem; max-height: 12rem;">
-      <img src="/accect/16bending9.jpg" class="card-img-top" alt="..." style="height: 9rem; object-fit: cover;">
+      <img src="/accect/16bending9.jpg" class="card-img-top fade-in blink" alt="Nama Aktivitas" style="height: 9rem; object-fit: cover;">
+      <div class="card-body d-flex flex-column justify-content-center align-items-center" style="padding: 0.5rem;">
+        <h6 class="card-title text-center mb-0">Nama Aktivitas</h6>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid text-dark mt-4">
+  <div class="row justify-content-center">
+    <div class="card m-2" style="width: 18rem; max-height: 12rem;">
+      <img src="/accect/16bending9.jpg" class="card-img-top fade-in blink" alt="Nama Aktivitas" style="height: 9rem; object-fit: cover;">
+      <div class="card-body d-flex flex-column justify-content-center align-items-center" style="padding: 0.5rem;">
+        <h6 class="card-title text-center mb-0">Nama Aktivitas</h6>
+      </div>
+    </div>
+    <div class="card m-2" style="width: 18rem; max-height: 12rem;">
+      <img src="/accect/16bending9.jpg" class="card-img-top fade-in blink" alt="Nama Aktivitas" style="height: 9rem; object-fit: cover;">
+      <div class="card-body d-flex flex-column justify-content-center align-items-center" style="padding: 0.5rem;">
+        <h6 class="card-title text-center mb-0">Nama Aktivitas</h6>
+      </div>
+    </div>
+    <div class="card m-2" style="width: 18rem; max-height: 12rem;">
+      <img src="/accect/16bending9.jpg" class="card-img-top fade-in blink" alt="Nama Aktivitas" style="height: 9rem; object-fit: cover;">
+      <div class="card-body d-flex flex-column justify-content-center align-items-center" style="padding: 0.5rem;">
+        <h6 class="card-title text-center mb-0">Nama Aktivitas</h6>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid text-dark mt-4">
+  <div class="row justify-content-center">
+    <div class="card m-2" style="width: 18rem; max-height: 12rem;">
+      <img src="/accect/16bending9.jpg" class="card-img-top fade-in blink" alt="Nama Aktivitas" style="height: 9rem; object-fit: cover;">
+      <div class="card-body d-flex flex-column justify-content-center align-items-center" style="padding: 0.5rem;">
+        <h6 class="card-title text-center mb-0">Nama Aktivitas</h6>
+      </div>
+    </div>
+    <div class="card m-2" style="width: 18rem; max-height: 12rem;">
+      <img src="/accect/16bending9.jpg" class="card-img-top fade-in blink" alt="Nama Aktivitas" style="height: 9rem; object-fit: cover;">
+      <div class="card-body d-flex flex-column justify-content-center align-items-center" style="padding: 0.5rem;">
+        <h6 class="card-title text-center mb-0">Nama Aktivitas</h6>
+      </div>
+    </div>
+    <div class="card m-2" style="width: 18rem; max-height: 12rem;">
+      <img src="/accect/16bending9.jpg" class="card-img-top fade-in blink" alt="Nama Aktivitas" style="height: 9rem; object-fit: cover;">
+      <div class="card-body d-flex flex-column justify-content-center align-items-center" style="padding: 0.5rem;">
+        <h6 class="card-title text-center mb-0">Nama Aktivitas</h6>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid text-dark mt-4">
+  <div class="row justify-content-center">
+    <div class="card m-2" style="width: 18rem; max-height: 12rem;">
+      <img src="/accect/16bending9.jpg" class="card-img-top fade-in blink" alt="Nama Aktivitas" style="height: 9rem; object-fit: cover;">
+      <div class="card-body d-flex flex-column justify-content-center align-items-center" style="padding: 0.5rem;">
+        <h6 class="card-title text-center mb-0">Nama Aktivitas</h6>
+      </div>
+    </div>
+    <div class="card m-2" style="width: 18rem; max-height: 12rem;">
+      <img src="/accect/16bending9.jpg" class="card-img-top fade-in blink" alt="Nama Aktivitas" style="height: 9rem; object-fit: cover;">
+      <div class="card-body d-flex flex-column justify-content-center align-items-center" style="padding: 0.5rem;">
+        <h6 class="card-title text-center mb-0">Nama Aktivitas</h6>
+      </div>
+    </div>
+    <div class="card m-2" style="width: 18rem; max-height: 12rem;">
+      <img src="/accect/16bending9.jpg" class="card-img-top fade-in blink" alt="Nama Aktivitas" style="height: 9rem; object-fit: cover;">
       <div class="card-body d-flex flex-column justify-content-center align-items-center" style="padding: 0.5rem;">
         <h6 class="card-title text-center mb-0">Nama Aktivitas</h6>
       </div>
@@ -169,5 +244,34 @@
  </div>
  <!-- layoy 1 end -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const elements = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    });
+
+    elements.forEach(el => observer.observe(el));
+  });
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const elements = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.animationDelay = '0.2s';
+          entry.target.classList.add('visible');
+        }
+      });
+    });
+
+    elements.forEach(el => observer.observe(el));
+  });
+</script>
 </body>
 </html>
